@@ -4,6 +4,8 @@ Created a Jenkins Job to quickly run the Cucumber tag on Jenkins. Here is the
 
 ![image](https://user-images.githubusercontent.com/108022872/211241057-95e0c665-6373-4476-bb40-99b811d89bf2.png)
 ![image](https://user-images.githubusercontent.com/108022872/211241140-592eb01e-0354-417f-a885-147e32ca2ee6.png)
+![image](https://user-images.githubusercontent.com/108022872/211243587-1b7f3695-d252-43c2-9051-842e30adada7.png)
+![image](https://user-images.githubusercontent.com/108022872/211243623-ec74b0e8-d032-4e81-b96a-f727cea364c1.png)
 
 Info from official site https://cucumber.io/docs/bdd/ 
 
