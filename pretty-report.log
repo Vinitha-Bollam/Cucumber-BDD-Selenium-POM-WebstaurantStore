@@ -1,0 +1,24 @@
+
+@All @ProductSearch @SearchResults
+Scenario Outline: Verify word 'Table' as title on every Product when a user search for a "stainless work table" [90m# src/main/resources/WebStaurantStore.feature:14[0m
+  [32mGiven [0m[32mUser navigates to Webstaurantstore[0m                                                                      [90m# stepdefs.StepDefinition.user_navigates_to_webstaurantstore()[0m
+  [32mWhen [0m[32mUser search for [0m[32m[1m"stainless work table"[0m                                                                   [90m# stepdefs.StepDefinition.user_search_for(java.lang.String)[0m
+  [32mThen [0m[32mUser should see every product with the word [0m[32m[1m"Table"[0m[32m in its title for [0m[32m[1m"stainless work table"[0m[32m search[0m       [90m# stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(java.lang.String,java.lang.String)[0m
+  [32mThen [0m[32mUser should select last of found items to Cart[0m                                                           [90m# stepdefs.StepDefinition.user_should_select_last_of_found_items_to_cart()[0m
+  [32mAnd [0m[32mUser should Empty Cart[0m                                                                                    [90m# stepdefs.StepDefinition.user_should_empty_cart()[0m
+
+@All @ProductSearch @SearchResults
+Scenario Outline: Verify word 'Table' as title on every Product when a user search for a "stainless  table" [90m# src/main/resources/WebStaurantStore.feature:15[0m
+  [32mGiven [0m[32mUser navigates to Webstaurantstore[0m                                                                  [90m# stepdefs.StepDefinition.user_navigates_to_webstaurantstore()[0m
+  [32mWhen [0m[32mUser search for [0m[32m[1m"stainless  table"[0m                                                                   [90m# stepdefs.StepDefinition.user_search_for(java.lang.String)[0m
+  [32mThen [0m[32mUser should see every product with the word [0m[32m[1m"Table"[0m[32m in its title for [0m[32m[1m"stainless  table"[0m[32m search[0m       [90m# stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(java.lang.String,java.lang.String)[0m
+  [32mThen [0m[32mUser should select last of found items to Cart[0m                                                       [90m# stepdefs.StepDefinition.user_should_select_last_of_found_items_to_cart()[0m
+  [32mAnd [0m[32mUser should Empty Cart[0m                                                                                [90m# stepdefs.StepDefinition.user_should_empty_cart()[0m
+
+@All @ProductSearch @SearchResults
+Scenario Outline: Verify word 'Table' as title on every Product when a user search for a "table" [90m# src/main/resources/WebStaurantStore.feature:16[0m
+  [32mGiven [0m[32mUser navigates to Webstaurantstore[0m                                                       [90m# stepdefs.StepDefinition.user_navigates_to_webstaurantstore()[0m
+  [32mWhen [0m[32mUser search for [0m[32m[1m"table"[0m                                                                   [90m# stepdefs.StepDefinition.user_search_for(java.lang.String)[0m
+  [32mThen [0m[32mUser should see every product with the word [0m[32m[1m"Table"[0m[32m in its title for [0m[32m[1m"table"[0m[32m search[0m       [90m# stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(java.lang.String,java.lang.String)[0m
+  [32mThen [0m[32mUser should select last of found items to Cart[0m                                            [90m# stepdefs.StepDefinition.user_should_select_last_of_found_items_to_cart()[0m
+  [32mAnd [0m[32mUser should Empty Cart[0m                                                                     [90m# stepdefs.StepDefinition.user_should_empty_cart()[0m
