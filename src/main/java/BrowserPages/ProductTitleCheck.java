@@ -11,11 +11,12 @@ public class ProductTitleCheck {
 
         private final String checkTitlehasWord;
         private final String searchFor;
+        public String ActualResult;
         private WebDriver driver;
-        static int wordtable = 0;
-        static int Nowordtable = 0;
-        static String ProductName = "";
-        static int TotalNoOfProducts = 0;
+        static int wordtableCount ;
+        static int NowordtableCount;
+        static String ProductName ;
+        static int TotalNoOfProducts;
         By AllPages = By.cssSelector("#paging>nav>ul>li");
         By NoOfProducts = By.id("details");
         By NextPage = By.cssSelector("#paging > nav > ul > li.inline-block.leading-4.align-top.rounded-r-md");
@@ -25,8 +26,14 @@ public class ProductTitleCheck {
             this.searchFor = searchFor;
             this.checkTitlehasWord = checkTitlehasWord;
         }
+        public String searchTable() {
+            
+            //Initialize the count values as 0 and product name as null
+            wordtableCount = 0;
+            NowordtableCount = 0;
+            ProductName = "";
+            TotalNoOfProducts = 0;
 
-        public void searchTable() {
         /*Get count of all pages for the search to navigate to each page to ensure the relevant word is present
          on title for each product displayed */
             List<WebElement> TotalPages = driver.findElements(AllPages);
@@ -57,10 +64,10 @@ public class ProductTitleCheck {
                     boolean match = m.find();
                     if (match) {
                         // Count the no of products with word 'table'
-                        wordtable = wordtable + 1;
+                        wordtableCount = wordtableCount + 1;
                     } else {
                         // Count the no of products without word 'table' along with list of product names of the same
-                        Nowordtable = Nowordtable + 1;
+                        NowordtableCount = NowordtableCount + 1;
                         ProductName = ProductName.concat("ProductName " + " ---> " + ProductDescription + '\n');
                     }
                 }
@@ -68,14 +75,25 @@ public class ProductTitleCheck {
                 //Navigate to next page after verifying word 'table' as title on every product on a page
                 driver.findElement(NextPage).click();
             }
+
             // Summarize, calculate and print the results for better visibility
             String Title = checkTitlehasWord.toUpperCase();
             System.out.println("<------------------------ Summary of Results ------------------------>");
             System.out.println("Total no of search pages when we search with " + searchFor + " --> " + TotalSearchpages);
             System.out.println("Total no of products displayed for " + searchFor + " --> " + TotalNoOfProducts + " from " + TotalSearchpages + " pages");
-            System.out.println("Total no of product has the word " + Title + " in its title " + " --> " + wordtable);
-            System.out.println("Total no of product without word " + Title + " in its title " + " --> " + Nowordtable);
+            System.out.println("Total no of product has the word " + Title + " in its title " + " --> " + wordtableCount);
+            System.out.println("Total no of product without word " + Title + " in its title " + " --> " + NowordtableCount);
             System.out.println("Here are the list of products without word " + Title + " in its title " + '\n' + ProductName);
+
+            // Set by default actual result as title word
+            ActualResult = checkTitlehasWord;
+
+            //Verify if there are any products that doesn't have the title word in product name and set actual result accordingly
+            if (!ProductName.equals("")) {
+                ActualResult = "Products with no " + Title + " in its title ----> " + '\n'  + ProductName;
+            }
+            return ActualResult;
         }
+
     }
 

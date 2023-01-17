@@ -5,15 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7c3602d2-4009-4e3e-84c9-32af3e4a18c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +54,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Verify word 'Table' as title on every Product when a user search for a &quot;&lt;Search&gt;&quot;">
+  <component name="RunManager" selected="Cucumber Java.Feature: WebStaurantStore">
     <configuration name="Feature: WebStaurantStore" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/main/resources/WebStaurantStore.feature" />
@@ -130,8 +122,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Verify word 'Table' as title on every Product when a user search for a &quot;&lt;Search&gt;&quot;" />
         <item itemvalue="Cucumber Java.Feature: WebStaurantStore" />
+        <item itemvalue="Cucumber Java.Scenario: Verify word 'Table' as title on every Product when a user search for a &quot;&lt;Search&gt;&quot;" />
         <item itemvalue="Cucumber Java.Scenario: Verify user is able to select last Item to Cart and Empty Cart" />
         <item itemvalue="JUnit.TestRunner" />
       </list>
@@ -146,6 +138,14 @@
       <option name="presentableId" value="Default" />
       <updated>1672900411629</updated>
     </task>
+    <task id="LOCAL-00001" summary="Framework for Cucumber BDD Selenium POM">
+      <created>1673237179551</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673237179551</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -172,5 +172,12 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CucumberJavaRunConfigurationType">
+        <watch expression="Nowordtable" />
+        <watch expression="ProductName" />
+        <watch expression="ActualResult" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

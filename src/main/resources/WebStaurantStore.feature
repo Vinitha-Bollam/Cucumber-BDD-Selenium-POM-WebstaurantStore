@@ -10,8 +10,8 @@ Feature: Product Search
     And User should Empty Cart
 
     Examples:
-      | Search                            | TitleWord |
-      | stainless work table | Table         |
-      | stainless  table            | Table        |
-      | table                                | Table        |
+      | Search                             | TitleWord |
+      | stainless work table     | Table         |
+      | stainless table               | Table         |
+      | table                               | Table         |
 

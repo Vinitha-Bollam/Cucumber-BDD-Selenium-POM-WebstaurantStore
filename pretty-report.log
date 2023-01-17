@@ -3,17 +3,105 @@
 Scenario Outline: Verify word 'Table' as title on every Product when a user search for a "stainless work table" [90m# src/main/resources/WebStaurantStore.feature:14[0m
   [32mGiven [0m[32mUser navigates to Webstaurantstore[0m                                                                      [90m# stepdefs.StepDefinition.user_navigates_to_webstaurantstore()[0m
   [32mWhen [0m[32mUser search for [0m[32m[1m"stainless work table"[0m                                                                   [90m# stepdefs.StepDefinition.user_search_for(java.lang.String)[0m
-  [32mThen [0m[32mUser should see every product with the word [0m[32m[1m"Table"[0m[32m in its title for [0m[32m[1m"stainless work table"[0m[32m search[0m       [90m# stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(java.lang.String,java.lang.String)[0m
-  [32mThen [0m[32mUser should select last of found items to Cart[0m                                                           [90m# stepdefs.StepDefinition.user_should_select_last_of_found_items_to_cart()[0m
-  [32mAnd [0m[32mUser should Empty Cart[0m                                                                                    [90m# stepdefs.StepDefinition.user_should_empty_cart()[0m
+  [31mThen [0m[31mUser should see every product with the word [0m[31m[1m"Table"[0m[31m in its title for [0m[31m[1m"stainless work table"[0m[31m search[0m       [90m# stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(java.lang.String,java.lang.String)[0m
+      [31morg.junit.ComparisonFailure: expected:<[Table]> but was:<[Products with no TABLE in its title ----> 
+ProductName  ---> Regency 30" x 48" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf, 10" Plate Shelf, and 10" Stainless Steel Adjustable Work Surface
+ITEM NUMBER
+#600ESP48KIT
+ProductName  ---> Regency 30" x 36" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf and 10" Stainless Steel Adjustable Work Surface
+ITEM NUMBER
+#600ES36KIT
+ProductName  ---> Metro MS1836-FSFS-PK2 PrepMate MultiStation with Accessory Pack and Stainless Steel Shelving - 38" x 19 3/8" x 39 1/8"
+ITEM NUMBER
+#46136FSFSPK2
+ProductName  ---> Regency 30" x 36" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf, 10" Plate Shelf, and 10" Stainless Steel Adjustable Work Surface
+ITEM NUMBER
+#600ESP36KIT
+ProductName  ---> Metro MS1830-FSFS-PK2 PrepMate MultiStation with Accessory Pack and Stainless Steel Shelving - 32" x 19 3/8" x 39 1/8"
+ITEM NUMBER
+#46130FSFSPK2
+ProductName  ---> Regency 24" x 24" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf and 10" Stainless Steel Adjustable Work Surface
+ITEM NUMBER
+#600ES24KIT
+ProductName  ---> Regency 30" x 48" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf and 10" Stainless Steel Adjustable Work Surface
+ITEM NUMBER
+#600ES48KIT
+]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(StepDefinition.java:38)
+	at ✽.User should see every product with the word "Table" in its title for "stainless work table" search(file:///C:/Vinitha/Projects/WebStaurantStore%20BDD/src/main/resources/WebStaurantStore.feature:8)
+[0m
+  [36mThen [0m[36mUser should select last of found items to Cart[0m                                                           [90m# stepdefs.StepDefinition.user_should_select_last_of_found_items_to_cart()[0m
+  [36mAnd [0m[36mUser should Empty Cart[0m                                                                                    [90m# stepdefs.StepDefinition.user_should_empty_cart()[0m
 
 @All @ProductSearch @SearchResults
-Scenario Outline: Verify word 'Table' as title on every Product when a user search for a "stainless  table" [90m# src/main/resources/WebStaurantStore.feature:15[0m
-  [32mGiven [0m[32mUser navigates to Webstaurantstore[0m                                                                  [90m# stepdefs.StepDefinition.user_navigates_to_webstaurantstore()[0m
-  [32mWhen [0m[32mUser search for [0m[32m[1m"stainless  table"[0m                                                                   [90m# stepdefs.StepDefinition.user_search_for(java.lang.String)[0m
-  [32mThen [0m[32mUser should see every product with the word [0m[32m[1m"Table"[0m[32m in its title for [0m[32m[1m"stainless  table"[0m[32m search[0m       [90m# stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(java.lang.String,java.lang.String)[0m
-  [32mThen [0m[32mUser should select last of found items to Cart[0m                                                       [90m# stepdefs.StepDefinition.user_should_select_last_of_found_items_to_cart()[0m
-  [32mAnd [0m[32mUser should Empty Cart[0m                                                                                [90m# stepdefs.StepDefinition.user_should_empty_cart()[0m
+Scenario Outline: Verify word 'Table' as title on every Product when a user search for a "stainless table" [90m# src/main/resources/WebStaurantStore.feature:15[0m
+  [32mGiven [0m[32mUser navigates to Webstaurantstore[0m                                                                 [90m# stepdefs.StepDefinition.user_navigates_to_webstaurantstore()[0m
+  [32mWhen [0m[32mUser search for [0m[32m[1m"stainless table"[0m                                                                   [90m# stepdefs.StepDefinition.user_search_for(java.lang.String)[0m
+  [31mThen [0m[31mUser should see every product with the word [0m[31m[1m"Table"[0m[31m in its title for [0m[31m[1m"stainless table"[0m[31m search[0m       [90m# stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(java.lang.String,java.lang.String)[0m
+      [31morg.junit.ComparisonFailure: expected:<[Table]> but was:<[Products with no TABLE in its title ----> 
+ProductName  ---> Rated 5 out of 5 stars
+Regency 30" x 36" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
+ITEM NUMBER
+#600ES3036G
+Good
+ProductName  ---> Rated 5 out of 5 stars
+Regency 30" x 48" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
+ITEM NUMBER
+#600ES3048G
+Good
+ProductName  ---> Rated 5 out of 5 stars
+Regency 24" x 24" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
+ITEM NUMBER
+#600ES2424G
+Good
+ProductName  ---> Rated 5 out of 5 stars
+Regency 30" x 72" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
+ITEM NUMBER
+#600ES3072G
+Good
+ProductName  ---> Rated 5 out of 5 stars
+Regency 30" x 48" 16-Gauge Stainless Steel Equipment Stand with Undershelf
+ITEM NUMBER
+#600ES3048S
+Better
+ProductName  ---> Rated 5 out of 5 stars
+Regency 30" x 24" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
+ITEM NUMBER
+#600ES3024G
+Good
+ProductName  ---> Rated 5 out of 5 stars
+Regency 30" x 36" 16-Gauge Stainless Steel Equipment Stand with Undershelf
+ITEM NUMBER
+#600ES3036S
+Better
+ProductName  ---> Regency 20" x 20" x 5" Triple-Stacked Drawer Set with Stainless Steel Front
+ITEM NUMBER
+#600DR2020ST3
+ProductName  ---> Rated 5 out of 5 stars
+Regency 30" x 60" 16-Gauge Stainless Steel Equipment Stand with Undershelf
+ITEM NUMBER
+#600ES3060S
+Better
+ProductName  ---> Rated 5 out of 5 stars
+Regency 30" x 30" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
+ITEM NUMBER
+#600ES3030G
+Good
+ProductName  ---> Rated 5 out of 5 stars
+Regency 30" x 60" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
+ITEM NUMBER
+#600ES3060G
+Good
+]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(StepDefinition.java:38)
+	at ✽.User should see every product with the word "Table" in its title for "stainless table" search(file:///C:/Vinitha/Projects/WebStaurantStore%20BDD/src/main/resources/WebStaurantStore.feature:8)
+[0m
+  [36mThen [0m[36mUser should select last of found items to Cart[0m                                                      [90m# stepdefs.StepDefinition.user_should_select_last_of_found_items_to_cart()[0m
+  [36mAnd [0m[36mUser should Empty Cart[0m                                                                               [90m# stepdefs.StepDefinition.user_should_empty_cart()[0m
 
 @All @ProductSearch @SearchResults
 Scenario Outline: Verify word 'Table' as title on every Product when a user search for a "table" [90m# src/main/resources/WebStaurantStore.feature:16[0m
