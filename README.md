@@ -1,4 +1,13 @@
-# Cucumber-BDD-Selenium-POM-WebstaurantStore
+# Cucumber-BDD-Selenium-Page-Object-Model
+
+Test scenario:
+
+1. Go to "https://www.webstaurantstore.com/"
+2. Search for "stainless work table".
+3. Check the search result ensuring every product has the word "Table" in its title.
+4. Add the last of found items to Cart.
+5. Empty Cart.
+
 Created a Jenkins Job to quickly run the Cucumber tag on Jenkins. Here is the 
 **Jenkins Console** [JenkinsConsole_Cucumber-BDD-Selenium-POM-WebstaurantStore.txt](https://github.com/Vinitha-Bollam/Cucumber-BDD-Selenium-POM-WebstaurantStore/files/10430119/JenkinsConsole_Cucumber-BDD-Selenium-POM-WebstaurantStore.txt)
 
