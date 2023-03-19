@@ -10,6 +10,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Assert;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class StepDefinition {
     private static WebDriver driver;
@@ -17,8 +18,10 @@ public class StepDefinition {
 
     @Before
     public void setup() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--remote-allow-origins=*", "ignore-certificate-errors");
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(options);
     }
     @Given("User navigates to Webstaurantstore")
     public void user_navigates_to_webstaurantstore() {

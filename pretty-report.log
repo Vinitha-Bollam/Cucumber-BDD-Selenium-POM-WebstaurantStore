@@ -8,28 +8,31 @@ Scenario Outline: Verify word 'Table' as title on every Product when a user sear
 ProductName  ---> Regency 30" x 48" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf, 10" Plate Shelf, and 10" Stainless Steel Adjustable Work Surface
 ITEM NUMBER
 #600ESP48KIT
-ProductName  ---> Regency 30" x 36" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf and 10" Stainless Steel Adjustable Work Surface
-ITEM NUMBER
-#600ES36KIT
-ProductName  ---> Metro MS1836-FSFS-PK2 PrepMate MultiStation with Accessory Pack and Stainless Steel Shelving - 38" x 19 3/8" x 39 1/8"
-ITEM NUMBER
-#46136FSFSPK2
 ProductName  ---> Regency 30" x 36" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf, 10" Plate Shelf, and 10" Stainless Steel Adjustable Work Surface
 ITEM NUMBER
 #600ESP36KIT
-ProductName  ---> Metro MS1830-FSFS-PK2 PrepMate MultiStation with Accessory Pack and Stainless Steel Shelving - 32" x 19 3/8" x 39 1/8"
+ProductName  ---> Regency 30" x 36" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf and 10" Stainless Steel Adjustable Work Surface
 ITEM NUMBER
-#46130FSFSPK2
-ProductName  ---> Regency 24" x 24" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf and 10" Stainless Steel Adjustable Work Surface
+#600ES36KIT
+ProductName  ---> Metro CR2430DSS Drive-Thru Order Prep Station with Stainless Steel Shelving - 31 3/4" x 27 3/4" x 65 3/4"
 ITEM NUMBER
-#600ES24KIT
+#461CR2430DSS
 ProductName  ---> Regency 30" x 48" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf and 10" Stainless Steel Adjustable Work Surface
 ITEM NUMBER
 #600ES48KIT
+ProductName  ---> Regency 24" x 24" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf and 10" Stainless Steel Adjustable Work Surface
+ITEM NUMBER
+#600ES24KIT
+ProductName  ---> Regency 24" x 24" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf, 10" Plate Shelf, and 10" Stainless Steel Adjustable Work Surface
+ITEM NUMBER
+#600ESP24KIT
+ProductName  ---> Regency 30" x 24" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf, 10" Plate Shelf, and 10" Stainless Steel Adjustable Work Surface
+ITEM NUMBER
+#600ESP30KIT
 ]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(StepDefinition.java:38)
+	at stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(StepDefinition.java:41)
 	at ✽.User should see every product with the word "Table" in its title for "stainless work table" search(file:///C:/Vinitha/Projects/WebStaurantStore%20BDD/src/main/resources/WebStaurantStore.feature:8)
 [0m
   [36mThen [0m[36mUser should select last of found items to Cart[0m                                                           [90m# stepdefs.StepDefinition.user_should_select_last_of_found_items_to_cart()[0m
@@ -56,48 +59,10 @@ Regency 24" x 24" 16-Gauge Stainless Steel Equipment Stand with Galvanized Under
 ITEM NUMBER
 #600ES2424G
 Good
-ProductName  ---> Rated 5 out of 5 stars
-Regency 30" x 72" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
-ITEM NUMBER
-#600ES3072G
-Good
-ProductName  ---> Rated 5 out of 5 stars
-Regency 30" x 48" 16-Gauge Stainless Steel Equipment Stand with Undershelf
-ITEM NUMBER
-#600ES3048S
-Better
-ProductName  ---> Rated 5 out of 5 stars
-Regency 30" x 24" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
-ITEM NUMBER
-#600ES3024G
-Good
-ProductName  ---> Rated 5 out of 5 stars
-Regency 30" x 36" 16-Gauge Stainless Steel Equipment Stand with Undershelf
-ITEM NUMBER
-#600ES3036S
-Better
-ProductName  ---> Regency 20" x 20" x 5" Triple-Stacked Drawer Set with Stainless Steel Front
-ITEM NUMBER
-#600DR2020ST3
-ProductName  ---> Rated 5 out of 5 stars
-Regency 30" x 60" 16-Gauge Stainless Steel Equipment Stand with Undershelf
-ITEM NUMBER
-#600ES3060S
-Better
-ProductName  ---> Rated 5 out of 5 stars
-Regency 30" x 30" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
-ITEM NUMBER
-#600ES3030G
-Good
-ProductName  ---> Rated 5 out of 5 stars
-Regency 30" x 60" 16-Gauge Stainless Steel Equipment Stand with Galvanized Undershelf
-ITEM NUMBER
-#600ES3060G
-Good
 ]>
 	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(StepDefinition.java:38)
+	at stepdefs.StepDefinition.user_should_see_every_product_with_the_word_in_its_title(StepDefinition.java:41)
 	at ✽.User should see every product with the word "Table" in its title for "stainless table" search(file:///C:/Vinitha/Projects/WebStaurantStore%20BDD/src/main/resources/WebStaurantStore.feature:8)
 [0m
   [36mThen [0m[36mUser should select last of found items to Cart[0m                                                      [90m# stepdefs.StepDefinition.user_should_select_last_of_found_items_to_cart()[0m
